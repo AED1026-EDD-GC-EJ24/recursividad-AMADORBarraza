@@ -1,4 +1,5 @@
 ./miPrincipal/Principal.java
 ./miPrincipal/AppLadrillos.java
 ./miPrincipal/AppFactorial.java
+./miPrincipal/AppBusquedaBinaria.java
 ./miTest/AppTest.java
