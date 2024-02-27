@@ -42,7 +42,7 @@ public class AppBusquedaBinaria{
             return pos;
         }
         else if (ele>a[pos]){
-            return busquedaBinariaRec(a,ele,li+1,ld);
+            return busquedaBinariaRec(a,ele,pos+1,ld);
         }
         else{
             return busquedaBinariaRec(a,ele,li,pos-1);
