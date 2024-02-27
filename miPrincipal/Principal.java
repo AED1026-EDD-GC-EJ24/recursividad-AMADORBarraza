@@ -36,10 +36,14 @@ public class Principal {
                AppFactorial.menu();
                break;
             case 3:
+               AppNaturales.menu();
                break;
             case 4:
+               AppSumaDigitos.menu();
                break;
             case 5:
+               AppAlfabeto.menu();
+         
                break;
             case 6:
                break;

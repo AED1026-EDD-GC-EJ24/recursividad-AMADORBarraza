@@ -2,6 +2,9 @@ package miPrincipal;
 
 public class AppFactorial {
     public static void menu(){
+        System.out.println("***********************");
+        System.out.println("       FACTORIAL       ");
+        System.out.println("***********************");
         System.out.println("Version Iterativa");
         int n=5;
         System.out.println("Factorial de "+n+"!="+factorial_ite(n));
