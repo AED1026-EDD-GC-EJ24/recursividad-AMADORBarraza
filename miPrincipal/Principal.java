@@ -51,6 +51,7 @@ public class Principal {
                AppBusquedaBinaria.menu();
                break;
             case 8:
+               AppSeleccion.menu();
                break;
             case 9:
                break;
