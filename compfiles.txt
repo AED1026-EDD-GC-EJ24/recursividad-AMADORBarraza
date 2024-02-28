@@ -6,6 +6,8 @@
 ./miPrincipal/AppLadrillos.java
 ./miPrincipal/AppSumaDigitos.java
 ./miPrincipal/AppFactorial.java
+./miPrincipal/AppFibonacci.java
 ./miPrincipal/AppBusquedaBinaria.java
+./miPrincipal/Performance.java
 ./miPrincipal/AppNaturales.java
 ./miTest/AppTest.java

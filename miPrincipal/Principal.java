@@ -58,6 +58,7 @@ public class Principal {
                break;
             
             case 10:
+               AppFibonacci.menu();
                break;
             case 11:
                break;
