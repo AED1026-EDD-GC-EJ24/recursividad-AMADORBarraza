@@ -1,6 +1,8 @@
 ./miPrincipal/AppAlfabeto.java
 ./miPrincipal/Principal.java
+./miPrincipal/AppMCD.java
 ./miPrincipal/AppSeleccion.java
+./miPrincipal/AppHanoi.java
 ./miPrincipal/AppLadrillos.java
 ./miPrincipal/AppSumaDigitos.java
 ./miPrincipal/AppFactorial.java

@@ -43,9 +43,9 @@ public class Principal {
                break;
             case 5:
                AppAlfabeto.menu();
-         
                break;
             case 6:
+               AppMCD.menu();
                break;
             case 7:
                AppBusquedaBinaria.menu();
@@ -54,7 +54,9 @@ public class Principal {
                AppSeleccion.menu();
                break;
             case 9:
+               AppHanoi.menu();
                break;
+            
             case 10:
                break;
             case 11:
