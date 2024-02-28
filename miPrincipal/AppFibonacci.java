@@ -3,6 +3,7 @@ package miPrincipal;
 import java.util.Scanner;
 
 public class AppFibonacci {
+    private static long cont;
     public static void menu(){
         System.out.println("******************************");
         System.out.println("***   Serie de Fibonacci  ***");
@@ -19,10 +20,12 @@ public class AppFibonacci {
 
 
 		//invoco funcion recursiva;
+        cont=-1;
 		f = fibonacciRec(n);
         System.out.println("Versión Recursiva");
 		//muestro el resultado
 		System.out.println("El termino "+n+" es "+f);
+        System.out.println("Se ja ejecutado = "+cont+" veces");
 
 		//entrada.close();
        
@@ -38,6 +41,7 @@ public class AppFibonacci {
 		return f;
 	}
     static double fibonacciRec(int n) {
+        cont++;
 		double f;
 		if (n<=2)
 		{
@@ -50,5 +54,8 @@ public class AppFibonacci {
 		return f;
 		
 	}
+    static long getContador(){
+        return cont;
+    }
     
 }
