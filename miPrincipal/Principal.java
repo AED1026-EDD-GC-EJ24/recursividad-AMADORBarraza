@@ -64,10 +64,8 @@ public class Principal {
                AppFibRecursivode40a50.menu();
                break;
             case 12:
-               break;
-
-            
-               
+               AppMezcla.menu();
+               break; 
             case 0:
                System.out.println("ADIOS!");
                consola.close();

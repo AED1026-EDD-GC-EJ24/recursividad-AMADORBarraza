@@ -95,8 +95,76 @@ Existen varias soluciones al problema del cálculo del MCD recursivo:
 
 Utilizar una función iterativa: Se puede calcular el MCD de dos números utilizando una función iterativa, que no se llama a sí misma. La función iterativa es más simple y eficiente que la función recursiva, y no tiene el problema de la lentitud o la falta de memoria.
 
+**8. Ordenamiento por Mezcla**
+==============================
 
-**8. Números Naturales**
+El ordenamiento por mezcla (merge sort en inglés) es un algoritmo de ordenamiento eficiente que utiliza la técnica de "divide y vencerás". Es un algoritmo versátil que se puede utilizar para ordenar arrays de cualquier tamaño y tipo de dato.
+
+Funcionamiento del algoritmo:
+
+Dividir: El algoritmo divide el array original en dos mitades iguales de forma recursiva hasta que cada mitad tenga un solo elemento.
+Conquistar: Se ordenan las dos mitades utilizando el mismo algoritmo de ordenamiento por mezcla.
+Combinar: Se combinan las dos mitades ordenadas en un único array ordenado. La combinación se realiza comparando los elementos de las dos mitades y colocando el elemento menor en el array final.
+Eficiencia del algoritmo:
+
+El ordenamiento por mezcla tiene una complejidad temporal de O(n log n), lo que significa que su tiempo de ejecución aumenta de forma logarítmica con el tamaño del array. Este algoritmo es más eficiente que otros algoritmos de ordenamiento como el ordenamiento por burbuja o el ordenamiento por inserción, especialmente para arrays grandes.
+
+Ventajas del algoritmo:
+
+Eficiente: El ordenamiento por mezcla es uno de los algoritmos de ordenamiento más eficientes.
+Versátil: Se puede utilizar para ordenar arrays de cualquier tamaño y tipo de dato.
+Estable: El ordenamiento por mezcla no cambia el orden de los elementos iguales en el array original.
+Desventajas del algoritmo:
+
+Complejidad espacial: El ordenamiento por mezcla requiere memoria adicional para almacenar las dos mitades del array durante la división y la combinación.
+Recursividad: La implementación recursiva del algoritmo puede ser ineficiente para algunos lenguajes de programación.
+Ejemplo:
+
+Supongamos que queremos ordenar el array [5, 2, 4, 6, 1, 3].
+
+División:
+
+El array se divide en dos mitades: [5, 2] y [4, 6, 1, 3].
+Cada mitad se divide de nuevo: [5] y [2], [4] y [6, 1, 3].
+Las mitades se siguen dividiendo hasta que cada una tenga un solo elemento.
+Conquista:
+
+Se ordenan las mitades de forma recursiva: [2, 5] y [1, 3, 4, 6].
+Combinación:
+
+Se combinan las dos mitades ordenadas: [1, 2, 3, 4, 5, 6].
+Resultado final:
+
+El array ordenado es [1, 2, 3, 4, 5, 6].
+
+El algoritmo del ordenamiento por mezcla recursivo es un algoritmo eficiente para ordenar arrays de cualquier tamaño. Sin embargo, tiene un problema importante: puede consumir mucha memoria RAM cuando se utiliza para ordenar arrays grandes.
+
+El problema se debe a la naturaleza recursiva del algoritmo. Cuando se llama a la función ordenarPorMezclas de forma recursiva para ordenar la primera mitad y la segunda mitad del array, se crea una nueva pila de ejecución para cada llamada.
+
+La pila de ejecución es un área de memoria que se utiliza para almacenar información sobre las funciones que se están ejecutando actualmente. Cada vez que se llama a una función de forma recursiva, se crea un nuevo marco en la pila de ejecución. Este marco contiene información sobre la función, como los valores de las variables locales y los argumentos que se le han pasado.
+
+El problema surge cuando se ordenan arrays muy grandes. La cantidad de memoria que se necesita para almacenar la pila de ejecución puede ser enorme, lo que puede provocar un desbordamiento de la pila.
+
+Soluciones:
+
+Existen varias soluciones al problema del ordenamiento por mezcla recursivo:
+
+1. Utilizar un algoritmo de ordenamiento iterativo:
+
+El ordenamiento por mezcla iterativo es una versión del algoritmo que no utiliza recursividad. El ordenamiento por mezcla iterativo es menos eficiente que el ordenamiento por mezcla recursivo, pero consume menos memoria RAM.
+
+2. Implementar la recursividad en cola:
+
+La recursividad en cola es una técnica que se utiliza para convertir la recursividad en iteración. La recursividad en cola puede ser utilizada para implementar el ordenamiento por mezcla recursivo de forma que consuma menos memoria RAM.
+
+3. Utilizar un límite de recursividad:
+
+Se puede establecer un límite de recursividad para evitar que la función ordenarPorMezclas se llame a sí misma de forma infinita. El límite de recursividad debe ser lo suficientemente grande como para permitir que la función ordene arrays de tamaño normal, pero lo suficientemente pequeño como para evitar que se desborde la pila.
+
+En general, se recomienda utilizar una de las soluciones alternativas al ordenamiento por mezcla recursivo cuando se necesita ordenar arrays grandes. El ordenamiento por mezcla iterativo, la recursividad en cola y el uso de un límite de recursividad son opciones que pueden ser utilizadas para evitar el problema del consumo excesivo de memoria RAM.
+
+
+**9. Números Naturales**
 ========================
 El algoritmo para calcular números naturales de forma recursiva se basa en la idea de que cada número natural se puede definir en función de sus predecesores. La forma más común de hacerlo es mediante la siguiente ecuación:
 
@@ -131,7 +199,7 @@ La recursividad puede ser difícil de entender para algunos principiantes.
 En general, la recursividad es una herramienta poderosa para definir y calcular números naturales. Sin embargo, es importante tener en cuenta las ventajas y desventajas de la recursividad antes de utilizarla en un programa específico.
 
 
-**9. Ordenamiento por Selección**
+**10. Ordenamiento por Selección**
 =================================
 El ordenamiento por selección es un algoritmo de ordenamiento simple que funciona seleccionando el elemento más pequeño de una lista y colocándolo al principio de la lista. Este proceso se repite hasta que la lista esté ordenada.
 
@@ -166,11 +234,37 @@ En algunos casos, es posible convertir una función recursiva en una función it
 
 En general, se recomienda evitar el uso del ordenamiento por selección recursivo para ordenar listas grandes. En estos casos, las soluciones alternativas como el ordenamiento por selección iterativo o los algoritmos de ordenamiento más eficientes son generalmente más eficientes y confiables.
 
-**10. Suma de Dígitos**
+a eficiencia del algoritmo de ordenamiento por selección (selection sort en inglés) se puede analizar en términos de su complejidad temporal y espacial.
+
+Complejidad temporal:
+
+En el peor caso: El algoritmo de ordenamiento por selección tiene una complejidad temporal de O(n^2). Esto significa que el tiempo de ejecución del algoritmo aumenta de forma cuadrática con el tamaño del array "n". Esto se debe a que el algoritmo realiza n comparaciones para encontrar el elemento más pequeño en cada iteración, y se necesitan n iteraciones para ordenar un array de n elementos.
+
+En el mejor caso: Cuando el array ya está ordenado, el algoritmo de ordenamiento por selección solo necesita realizar n-1 comparaciones, lo que le da una complejidad temporal de O(n). Sin embargo, este caso es poco común en la práctica.
+
+En el caso promedio: La complejidad temporal del algoritmo de ordenamiento por selección se estima en O(n^2).
+
+Complejidad espacial:
+
+El algoritmo de ordenamiento por selección requiere una memoria adicional de O(1) para almacenar el índice del elemento más pequeño. Esto significa que el algoritmo no necesita mucha memoria para funcionar, lo que lo hace adecuado para ordenar arrays grandes en dispositivos con memoria limitada.
+En resumen, el algoritmo de ordenamiento por selección es un algoritmo con una complejidad temporal de O(n^2) en el peor caso y en el caso promedio. Sin embargo, requiere poca memoria adicional, lo que lo hace adecuado para ordenar arrays grandes en dispositivos con memoria limitada.
+
+Ventajas del algoritmo de ordenamiento por selección:
+
+Simple: El algoritmo de ordenamiento por selección es uno de los algoritmos de ordenamiento más simples de entender e implementar.
+Eficiente en memoria: El algoritmo de ordenamiento por selección solo requiere una memoria adicional de O(1).
+Estable: El algoritmo de ordenamiento por selección no cambia el orden de los elementos iguales en el array original.
+Desventajas del algoritmo de ordenamiento por selección:
+
+Lento: El algoritmo de ordenamiento por selección es un algoritmo lento en comparación con otros algoritmos de ordenamiento como el ordenamiento por mezcla o el ordenamiento rápido.
+Ineficiente para arrays grandes: El tiempo de ejecución del algoritmo de ordenamiento por selección aumenta considerablemente con el tamaño del array.
+En general, el algoritmo de ordenamiento por selección es una buena opción para ordenar arrays pequeños o cuando la simplicidad y la eficiencia en memoria son más importantes que la velocidad.
+
+**11. Suma de Dígitos**
 ========================
 El algoritmo recursivo para sumar los dígitos de un número funciona dividiendo el número en dos partes: el dígito más a la derecha y el resto del número. Luego, se suma el dígito más a la derecha al resultado de sumar los dígitos del resto del número.
 
-**11. Performance**
+**12. Performance**
 ========================
 Se utiliza para medir los tiempos en ejecutarse un algoritmo.
 La variable *ti*(tiempo inicial) se asigna la hora, expresada en milisegundos, de inicio de la medición; y el la variable *tf* (tiempo final) se asigna la hora de finalización de la medición
@@ -178,28 +272,6 @@ Los métodos *start* y *stop* permiten asignar la hora de inicio y la hora de fi
 
 
 
-```
-
-
-## Diagrama de clases
-[Editor en línea](https://mermaid.live/)
-```mermaid
----
-title: Rational
----
-classDiagram
-      class Rational
-      Rational: -a
-      Rational: -b
-      Rational: +makeRational()
-      Rational: +add()
-      Rational: +mult()
-      Rational: +equal()
-```
-[Referencia-Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
-
-## Diagrama de clases UML con draw.io
-El repositorio está configurado para crear Diagramas de clases UML con ```draw.io```. Para usarlo simplemente agrega un archivo con extensión ```.drawio.png```, das doble clic sobre el mismo y se activará el editor ```draw.io``` incrustado en ```VSCode``` para edición. Asegúrate de agregar las formas UML en el menú de formas del lado izquierdo (opción ```+Más formas```).
 ## Uso del proyecto con make
 
 ### Default - Compilar+Probar+Ejecutar
@@ -238,23 +310,23 @@ git push origin main
 
 ```
 find ./ -type f -name "*.java" > compfiles.txt
-javac -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
+javac -encoding utf-8 -d bin -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
 ```
 ### Ejecutar ambos comandos en 1 sólo paso:
 ```
-find ./ -type f -name "*.java" > compfiles.txt ; javac -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
+find ./ -type f -name "*.java" > compfiles.txt ; javac -encoding utf-8 -d bin -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
 ```
 
 ### Ejecutar Todas la pruebas locales de 1 Test Case
 ```
-java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-class miTest.AppTest
+java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path bin --select-class miTest.AppTest
 ```
 ### Ejecutar 1 prueba local de 1 Test Case
 ```
-java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#appHasAGreeting
+java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path bin --select-method miTest.AppTest#appHasAGreeting
 ```
 ### Ejecutar App
 ```
-java -cp build miPrincipal.Principal
+java -cp bin miPrincipal.Principal
 ```
 Los comandos anteriores están considerados para un ambiente Linux. [Referencia.](https://www.baeldung.com/junit-run-from-command-line)

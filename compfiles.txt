@@ -8,6 +8,7 @@
 ./miPrincipal/Principal.java
 ./miPrincipal/AppFibRecursivode40a50.java
 ./miPrincipal/AppSeleccion.java
+./miPrincipal/AppMezcla.java
 ./miPrincipal/AppLadrillos.java
 ./miPrincipal/AppFactorial.java
 ./miPrincipal/AppMCD.java
