@@ -21,8 +21,9 @@ public class Principal {
             System.out.println(" 8) Ordenamiento Selección");
             System.out.println(" 9) Torres de Hanoi");
             System.out.println("10) Serie de Fibonacci");
-            System.out.println("11) Performance Serie Fibonacci");
-            System.out.println("12) Ordenación por Mezclas");
+            System.out.println("11) Midiendo Performance de Fibonacci");
+            System.out.println("12) Fibonacci Optimizado");
+            System.out.println("13) Ordenación por Mezclas");
             System.out.println("");
             System.out.println("0) SALIR");
             System.out.print("Selecciona opción:");
@@ -64,6 +65,9 @@ public class Principal {
                AppFibRecursivode40a50.menu();
                break;
             case 12:
+               AppFibRecursivoOptimizado.menu();
+               break;
+            case 13:
                AppMezcla.menu();
                break; 
             case 0:

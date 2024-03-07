@@ -1,6 +1,5 @@
 package miPrincipal;
 
-
 public class OrdenamientoSeleccion <T extends Comparable<T>> {
     public OrdenamientoSeleccion(){
         
@@ -34,16 +33,11 @@ public class OrdenamientoSeleccion <T extends Comparable<T>> {
         for (int i=posInicial+1;i<=posFinal;i++){
             
             if ((a[i].compareTo(a[min])) <0 ){
-            
-            //if (a[i]<a[min]){
                 min=i;
-               
-               
             }
         }
         return min;
         
-
     }
     public  void intercambiar(T []a,int pos, int minimo){
     

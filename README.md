@@ -57,17 +57,21 @@ El problema surge cuando se calcula el número Fibonacci de un número grande. L
 **5. Fibonacci Recursivo de 40 a 50**
 =====================================
 Calcula una serie de números de fibonacci entre 40 y 50 para mostrar como el calculo incrementa
-Luego se ve la forma de solucionarlo, utilizando una estructura HashTable.
+
 Utilizamos la clase Performace para medir su tiempo.
 
+**6. Fibonacci Recursivo Optimizado
+======================================
+Basado en la demostración del ejercicio anterior (Fibonacci Recursivo de 40 a 50) en donde demostramos que para calcular el fibonacci de 100, se requirirán de varios años, se modifico modificó la Clase del Fibonacci Recursivo, agrengando un método para optimizar el cálculo, utilizando una Tabla Hash, con lo cual se evitan las llamandas recursivas innecesarias.
 
-**6. Ladrillos**
+
+**7. Ladrillos**
 ========================
 Imprime una una "pared" formada por n filas de ladrillos de forma recursiva,
 los ladrillos se representan con la letra X
 
 
-**7. Máximo Común Divisor**
+**8. Máximo Común Divisor**
 ===========================
 El máximo común divisor (MCD) de dos números enteros positivos es el mayor número que divide a ambos números sin dejar resto. El MCD se puede calcular de forma recursiva utilizando el algoritmo de Euclides.
 
@@ -95,7 +99,7 @@ Existen varias soluciones al problema del cálculo del MCD recursivo:
 
 Utilizar una función iterativa: Se puede calcular el MCD de dos números utilizando una función iterativa, que no se llama a sí misma. La función iterativa es más simple y eficiente que la función recursiva, y no tiene el problema de la lentitud o la falta de memoria.
 
-**8. Ordenamiento por Mezcla**
+**9. Ordenamiento por Mezcla**
 ==============================
 
 El ordenamiento por mezcla (merge sort en inglés) es un algoritmo de ordenamiento eficiente que utiliza la técnica de "divide y vencerás". Es un algoritmo versátil que se puede utilizar para ordenar arrays de cualquier tamaño y tipo de dato.
@@ -164,7 +168,7 @@ Se puede establecer un límite de recursividad para evitar que la función orden
 En general, se recomienda utilizar una de las soluciones alternativas al ordenamiento por mezcla recursivo cuando se necesita ordenar arrays grandes. El ordenamiento por mezcla iterativo, la recursividad en cola y el uso de un límite de recursividad son opciones que pueden ser utilizadas para evitar el problema del consumo excesivo de memoria RAM.
 
 
-**9. Números Naturales**
+**10. Números Naturales**
 ========================
 El algoritmo para calcular números naturales de forma recursiva se basa en la idea de que cada número natural se puede definir en función de sus predecesores. La forma más común de hacerlo es mediante la siguiente ecuación:
 
@@ -199,7 +203,7 @@ La recursividad puede ser difícil de entender para algunos principiantes.
 En general, la recursividad es una herramienta poderosa para definir y calcular números naturales. Sin embargo, es importante tener en cuenta las ventajas y desventajas de la recursividad antes de utilizarla en un programa específico.
 
 
-**10. Ordenamiento por Selección**
+**11. Ordenamiento por Selección**
 =================================
 El ordenamiento por selección es un algoritmo de ordenamiento simple que funciona seleccionando el elemento más pequeño de una lista y colocándolo al principio de la lista. Este proceso se repite hasta que la lista esté ordenada.
 
@@ -260,11 +264,11 @@ Lento: El algoritmo de ordenamiento por selección es un algoritmo lento en comp
 Ineficiente para arrays grandes: El tiempo de ejecución del algoritmo de ordenamiento por selección aumenta considerablemente con el tamaño del array.
 En general, el algoritmo de ordenamiento por selección es una buena opción para ordenar arrays pequeños o cuando la simplicidad y la eficiencia en memoria son más importantes que la velocidad.
 
-**11. Suma de Dígitos**
+**12. Suma de Dígitos**
 ========================
 El algoritmo recursivo para sumar los dígitos de un número funciona dividiendo el número en dos partes: el dígito más a la derecha y el resto del número. Luego, se suma el dígito más a la derecha al resultado de sumar los dígitos del resto del número.
 
-**12. Performance**
+**13. Performance**
 ========================
 Se utiliza para medir los tiempos en ejecutarse un algoritmo.
 La variable *ti*(tiempo inicial) se asigna la hora, expresada en milisegundos, de inicio de la medición; y el la variable *tf* (tiempo final) se asigna la hora de finalización de la medición

@@ -10,6 +10,7 @@
 ./miPrincipal/AppMCD.java
 ./miPrincipal/AppHanoi.java
 ./miPrincipal/Performance.java
+./miPrincipal/AppFibRecursivoOptimizado.java
 ./miPrincipal/AppFactorial.java
 ./miPrincipal/AppMezcla.java
 ./miPrincipal/AppSeleccion.java

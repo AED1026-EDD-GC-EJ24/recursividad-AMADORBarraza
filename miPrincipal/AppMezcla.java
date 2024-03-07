@@ -7,9 +7,7 @@ public static void menu() {
         System.out.println("****************************+***");
         System.out.println("**  Ordenamiento por Mezclas  **");
         System.out.println("***************************+****");
-        
-
-
+       
         /*
         Alumno arr[]={new Alumno("Martin",25,90)
                      ,new Alumno("Carlos",23,70)
@@ -22,6 +20,7 @@ public static void menu() {
         
         }
         */
+        //Lo probamos con un arreglo de Integer
         System.out.println("Versión Recursiva");
         Integer arreglo[]={20,10,5,40,30,15};
         @SuppressWarnings("rawtypes")
@@ -33,6 +32,25 @@ public static void menu() {
             System.out.print(ele+" ");
         }
         System.out.println();
+        //Lo probamoscon un arreglo de String
+        String arreglo2[]= {"Beatriz","Zulema","Ana","Carlos","Felipe"};
+        om.ordenar(arreglo2);
+        for (String ele: arreglo2)
+        {
+            System.out.print(ele+" ");
+        }
+        System.out.println();
+        //Lo probamos con un arregoo de Alumnos
+        Alumno arr[]={new Alumno("Martin",25,90)
+                     ,new Alumno("Carlos",23,70)
+                     ,new Alumno("Anastacia",21,100)};
+        om.ordenar(arr);
+        for (Alumno ele: arr)
+        {
+            System.out.print(ele+" ");
+        }
+        System.out.println();
+
 
         
     }
