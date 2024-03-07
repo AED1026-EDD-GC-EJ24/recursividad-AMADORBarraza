@@ -32,46 +32,13 @@ public class AppMCD {
     }
     public static int mcd_ite(int n,int m)
     {
-        /* 
-        int dividendo,divisor;
-        int cociente, residuo;
-
-        if (n>m){
-            divisor = m;
-            dividendo = n;
-        }
-        else {
-            divisor = n;
-            dividendo = m;
-        }
-        residuo = dividendo%divisor;
-        cociente = dividendo/divisor;
-
-
-        while (residuo !=0){
-            dividendo = divisor;
-            divisor = residuo;
-
-            residuo = dividendo%divisor;
-            cociente = dividendo/divisor;
-        }
-        return cociente;
-        */
-        while (m > 0){
-          int temp = n % m;
-          n = m;
-          m = temp;
-        }
-        return n;
+       //coloque el códifo faltante
 
     }
     public static int mcd_rec(int n,int m){
-        if (m>n && m%n==0)
-           return n;
-        else if (m>n)
-           return mcd_rec(n, m%n);
-        else
-           return mcd_rec(m,n);
+
+        //coloque el código faltante
+        
             
     }
     

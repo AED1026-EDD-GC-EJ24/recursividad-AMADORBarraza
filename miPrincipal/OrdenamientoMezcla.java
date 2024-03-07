@@ -2,7 +2,14 @@ package miPrincipal;
 
 import java.util.Arrays;
 
-public class OrdenamientoMezcla <T extends Comparable<T> >{
+//Coloque el código para que esta clase extienda de la interfaz Comparable
+/*
+ * Una interfaz define un contrato que una clase puede implementar. 
+ * En este caso, la interfaz Comparable define un método compareTo 
+ * que permite comparar dos objetos de la clase que implementa Comparable.  
+ * La implementación del método compareTo determina el criterio de orden para los objetos.
+ */
+public class OrdenamientoMezcla <T <T> >{
     public OrdenamientoMezcla(){
 
     }
@@ -24,11 +31,13 @@ public class OrdenamientoMezcla <T extends Comparable<T> >{
         for (int i = mitad; i < arreglo.length; i++) {
             mitadDerecha[i - mitad] = arreglo[i];
         }
+        //coloque la llamada recursiva a ordener manando la mitad izquierda
 
-        ordenar(mitadIzquierda);
-        ordenar(mitadDerecha);
+        //coloque la llamada recursiva a ordener manando la mitad derecha
+        
+        //invoque al metodo mezclae
 
-        mezclar(arreglo, mitadIzquierda, mitadDerecha);
+       
     }
 
     private <T extends Comparable<T>> void mezclar(T[] arreglo, T[] mitadIzquierda, T[] mitadDerecha) {

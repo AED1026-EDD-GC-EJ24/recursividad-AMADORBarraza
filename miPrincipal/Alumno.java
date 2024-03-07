@@ -1,6 +1,7 @@
 package miPrincipal;
 
-public class Alumno implements Comparable<Alumno>, Identificable<String>{
+//Implemente la clase como Comparable para poder ordenar Alumnos
+public class Alumno implements  Identificable<String>{
     private String nombre;
     private int edad;
     private double promedio;
@@ -13,11 +14,13 @@ public class Alumno implements Comparable<Alumno>, Identificable<String>{
     //Metodo heredado para la interfaz Comparable
     @Override
     public int compareTo(Alumno otroAlumno){
-        return this.edad-otroAlumno.edad;
+        //coloque aquí el código faltante para que ordene en lase a la edad
+        
     }
+    //complete el método toString
     @Override
     public String toString(){
-        return nombre+" "+edad+" "+promedio;
+        
     }
     public void setNombre(String nom){
         this.nombre = nom;
