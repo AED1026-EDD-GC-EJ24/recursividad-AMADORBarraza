@@ -1,9 +1,6 @@
 package miPrincipal;
-
-
-public class Util<T>{
-    
-    public static <T> void ordenar_burbuja(T[] arr, Criterio<T> cr) {
+public class OrdenamientoBurbuja<T>{
+    public <T> void ordenar_burbuja(T[] arr, Criterio<T> cr) {
         boolean ordenado = false;
         while (!ordenado) {
            ordenado = true;
@@ -18,7 +15,4 @@ public class Util<T>{
         }
     }
 
-    
-    
-    
 }
