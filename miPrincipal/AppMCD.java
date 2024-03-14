@@ -32,14 +32,18 @@ public class AppMCD {
     }
     public static int mcd_ite(int n,int m)
     {
-       //coloque el códifo faltante
-
+    	while (m != 0) {
+            int temp = m;
+            m = n % m;
+            n = temp;
+        }
+        return n;
     }
-    public static int mcd_rec(int n,int m){
-
-        //coloque el código faltante
-        
-            
+    public static int mcd_rec(int n,int m) {
+    	if (m != 0) {
+    		return mcd_rec(m, n % m);
+        }        
+    	return n;
     }
     
 }

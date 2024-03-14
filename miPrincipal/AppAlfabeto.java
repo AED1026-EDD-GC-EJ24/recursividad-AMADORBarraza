@@ -5,16 +5,13 @@ public class AppAlfabeto {
         System.out.println("************************");
         System.out.println(" RECURSIVIDAD INDIRECTA ");
         System.out.println("************************");
-        System.out.println();
-        metodoA('Z');
-        System.out.println();
+     
+        abecedario_Recursivo('a');
     }
-    public static void metodoA(char c){
-        metodoB(c);
-
-    }
-    public static void metodoB(char c){
-        metodoA(c);
-
-    }
+   	 private static void abecedario_Recursivo(char ch) {
+	        if (ch <= 'z') {
+	            System.out.print(ch + " ");
+	            abecedario_Recursivo((char)(ch + 1));
+	        }
+	    }
 }

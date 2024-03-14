@@ -1,5 +1,4 @@
 package miPrincipal;
-
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -58,9 +57,13 @@ public class AppFibonacci {
     static long getContador(){
         return cont;
     }
-	//coloque aquí el código faltante
-    static double fibonacciRecOptimizado() {
-		
-	}
-    
+	
+    static double fibonacciRecOptimizado(int n, Hashtable<Integer,Double> memo) {
+    	if (n <= 1) {
+            return n;
+        } else if (!memo.containsKey(n)) {
+            memo.put(n, fibonacciRecOptimizado(n - 1,memo) + fibonacciRecOptimizado(n - 2,memo));
+        }
+        return memo.get(n);
+    }
 }

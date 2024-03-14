@@ -12,15 +12,14 @@ public class Alumno implements  Identificable<String>{
         this.promedio = p;
     }
     //Metodo heredado para la interfaz Comparable
-    @Override
-    public int compareTo(Alumno otroAlumno){
-        //coloque aquí el código faltante para que ordene en lase a la edad
-        
+    
+    public int compareTo(Object o){
+        return this.toString().compareTo(o.toString());
     }
     //complete el método toString
     @Override
     public String toString(){
-        
+        return nombre;
     }
     public void setNombre(String nom){
         this.nombre = nom;

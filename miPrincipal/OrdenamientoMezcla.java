@@ -9,7 +9,7 @@ import java.util.Arrays;
  * que permite comparar dos objetos de la clase que implementa Comparable.  
  * La implementación del método compareTo determina el criterio de orden para los objetos.
  */
-public class OrdenamientoMezcla <T <T> >{
+public class OrdenamientoMezcla <T>{
     public OrdenamientoMezcla(){
 
     }
@@ -20,29 +20,15 @@ public class OrdenamientoMezcla <T <T> >{
 
         int mitad = arreglo.length / 2;
         T[] mitadIzquierda = Arrays.copyOf(arreglo, mitad);
-
         T[] mitadDerecha = Arrays.copyOfRange(arreglo, mitad, arreglo.length);
-       
 
-        for (int i = 0; i < mitad; i++) {
-            mitadIzquierda[i] = arreglo[i];
-        }
-
-        for (int i = mitad; i < arreglo.length; i++) {
-            mitadDerecha[i - mitad] = arreglo[i];
-        }
-        //coloque la llamada recursiva a ordener manando la mitad izquierda
-
-        //coloque la llamada recursiva a ordener manando la mitad derecha
-        
-        //invoque al metodo mezclae
-
-       
+        ordenar(mitadIzquierda);
+        ordenar(mitadDerecha);
+        mezclar(arreglo, mitadIzquierda, mitadDerecha);
     }
 
     private <T extends Comparable<T>> void mezclar(T[] arreglo, T[] mitadIzquierda, T[] mitadDerecha) {
         int i = 0, j = 0, k = 0;
-
         while (i < mitadIzquierda.length && j < mitadDerecha.length) {
             if (mitadIzquierda[i].compareTo(mitadDerecha[j]) < 0) {
                 arreglo[k++] = mitadIzquierda[i++];
@@ -50,7 +36,6 @@ public class OrdenamientoMezcla <T <T> >{
                 arreglo[k++] = mitadDerecha[j++];
             }
         }
-
         while (i < mitadIzquierda.length) {
             arreglo[k++] = mitadIzquierda[i++];
         }
@@ -59,5 +44,6 @@ public class OrdenamientoMezcla <T <T> >{
             arreglo[k++] = mitadDerecha[j++];
         }
     }
+
 
 }
